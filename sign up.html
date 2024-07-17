@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style33.css">
+</head>
+<body>
+    <section class="sect1-contact" id="menu">
+        <nav class="navbarr">
+            <div class="logo">
+                <h2><a href="index.html">LOGO</a></h2>
+            </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="index.html">SERVICES</a></li>
+                <li><a href="index.html">CONTACT US</a></li>
+                <li><a href="sign up.html">SIGN UP/REGISTER</a></li>
+            </ul>
+        </nav>
+    </section>   
+    <section class="sect2-contact">
+        <div class="div1-contact">
+            <h1><a href="">REGISTER NOW </a></h1>
+        </div>
+    </section>   
+    <form class="form" id="form">
+        <h4>GET IN TOUCH</h4>
+        <div class="form-control">
+           <input type="text" id="name" placeholder="Enter your name" onkeyup="validate_name()">
+           <span style="color: red;" id="name_error"></span>
+        </div><br>
+        <div class="form-control">
+            <input type="email" id="emaill" placeholder="Enter your email address" onkeyup="validate_email()">
+            <span style="color: red;" id="emaill_error"></span>
+         </div><br>
+        <div class="form-control">
+           <input type="tel" id="tel" placeholder="Enter your phone-number" onkeyup="validate_tel()">
+           <span style="color: red;" id="tel_error"></span>
+        </div><br>
+        <div class="form-control">   
+           <label for="maritalstatus" name="maritalstatus" value="maritalstatus" onkeyup="validate_maritalstatus()" >Marital Status:</label><br>
+           <input type="checkbox" style="margin-left: 45px;" name="single" id="single">: Single
+           <input type="checkbox" name="married" id="married">: Married <br>
+           <span style="color: red;" id="marital_error"></span><br>
+        </div>   
+        <div class="form-control" class="nationality" >
+            <label for="nationality">Nationality:</label>
+            <select name="nationality" style="border: 1px solid black;color: black;" id="nationality" onkeyup="validate_nationality()">
+               <option style="background-color: beige;" value="select_country" id="select_country" style="display: none;">Select Country</option>
+               <option style="background-color: beige;" value="nigeria" id="nigeria">Nigeria</option>
+               <option style="background-color: beige;" value="usa" id="usa">USA</option>
+               <option style="background-color: beige;" value="kenya" id="kenya">kenya</option>
+               <option style="background-color: beige;" value="south_africa" id="south_africa">South-Africa</option>
+               <option style="background-color: beige;" value="ghana" id="ghana">Ghana</option>
+               <option style="background-color: beige;" value="others" id="others">Others</option>
+            </select> <br>
+            <span style="color: red;" id="nationality_error"></span>  
+        </div>
+        <div class="form-control">
+            <label for="Package-intended">Package-intended:</label>
+            <select name="nationality" style="border: 1px solid black;color: black;" id="nationality" onkeyup="validate_nationality()">
+               <option style="background-color: beige;" value="select_country" id="select_country" style="display: none;">Select Your Package</option>
+               <option style="background-color: beige;" value="nigeria" id="nigeria">Web Development</option>
+               <option style="background-color: beige;" value="nigeria" id="nigeria">Machine Learning</option>
+               <option style="background-color: beige;" value="usa" id="usa">Data Science</option>
+               <option style="background-color: beige;" value="kenya" id="kenya">Cyber Security</option>
+               <option style="background-color: beige;" value="south_africa" id="south_africa">Digital Marketting</option>
+               <option style="background-color: beige;" value="ghana" id="ghana">Graphics Design</option>
+               <option style="background-color: beige;" value="others" id="others">Others</option>
+            </select> <br>
+            <span style="color: red;" id="nationality_error"></span>
+        </div>
+        <div class="form-control">
+           <textarea name="" id="message" cols="79" rows="7" placeholder="Enter your message" onkeyup="validate_message()"></textarea> <br>
+           <span style="color: red;" id="message_error"></span>
+        </div>
+        <p>* All fields are mandatory</p>
+        <button id="btn" type="submit" onclick="return validate_form()">Submit</button>
+        <span style="color: red;padding-left: 45px;padding-bottom: 45px;" id="button_error"></span>
+    </form>  
+    <a href="#menu" id="arrowup"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <div class="media">
+        <div class="media1">
+            <ol>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="index.html">SERVICES</a></li>
+                <li><a href="index.html">CONTACT US</a></li>
+                <li><a href="sign up.html">SIGN UP/REGISTER</a></li>
+            </ol>    
+        </div>
+        <div class="media2">
+            <h1>LOGO</h1>
+            <div class="place">
+                <i class="fa-solid fa-location-dot" id="place"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quia.</p>
+            </div>
+            <div class="call">
+                <i class="fa-solid fa-phone" id="call"></i>
+                <p>International calls:09012012319,National calls: 09131476774</p>
+            </div>
+            <div class="email1">
+                <i class="fa-solid fa-envelope" id="email1"></i> 
+                <p>Lorem ipsum dolor sit amet. <br>Lorem ipsum dolor sit amet consectetur adipisicing. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>             
+            </div>
+            <h3>&copy copyright: EMERE EMMANUEL CHISOM</h3>
+        </div>
+        <div class="media3">
+            <h2>NEWSLETTER</h2>
+            <h3>Subscribe to our email newsletter to receive updates and news.</h3>
+            <div class="newsletter">
+                <input type="search" name="" id="search" placeholder="Enter email">
+                <i class="fa-solid fa-paper-plane" id="newsletter"></i>
+            </div>
+            <div class="logo-links">
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook" id="facebook"></i></a>
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter" id="twitter"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram" id="instagram"></i></a>
+                <a href="https://tiktok.com"><i class="fa-brands fa-tiktok" id="tiktok"></i></a>
+            </div>
+        </div>
+
+    <script src="javascript2.js"></script>
+</body>
+</html>
